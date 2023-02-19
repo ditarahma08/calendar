@@ -10,9 +10,31 @@
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	border: 2px solid var(--grey);
+	border-right: 2px solid var(--grey);
+	border-bottom: 2px solid var(--grey);
+	padding: 7px;
+	cursor: pointer;
 }
 
 .date {
-	font-size: 25px;
+	font-size: 20px;
+}
+
+.invalid {
+	color: var(--grey);
+}
+
+.isToday {
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: 100%;
+	padding: 5px 7px;
+}
+
+.event {
+	color: var(--white);
+	border-radius: 5px;
+	margin-bottom: 3px;
+	width: 80%;
+	text-align: center;
 }

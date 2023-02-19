@@ -1,9 +1,11 @@
 import styles from '@/styles/TopBar.module.css'
 
-const TopBar = () => {
+const TopBar = (props) => {
+	const { open, onToggle } = props
+
 	return (
 		<div className={`d-flex align-items-center ${styles.topbar}`}>
-			<div className={`${styles.hamburger}`}>
+			<div className={`${styles.hamburger} ${open ? styles.open : ''}`} onClick={() => onToggle()}>
 				<span styles={`${styles.bar} ${styles.top}`}></span>
 				<span styles={`${styles.bar} ${styles.mid}`}></span>
 				<span styles={`${styles.bar} ${styles.bot}`}></span>

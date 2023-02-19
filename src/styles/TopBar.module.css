@@ -8,6 +8,10 @@
 	margin-bottom: 0;
 }
 
+.hamburger {
+	cursor: pointer;
+}
+
 .hamburger span {
 	background-color: var(--black);
   height: 3px;
